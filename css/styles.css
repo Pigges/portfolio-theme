@@ -1,0 +1,209 @@
+@import url(https://fonts.bunny.net/css?family=ubuntu:300,300i,400,400i,500,500i,700,700i);
+
+/* 1. General CSS Rules for page */
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif;
+    color: #eee;
+}
+
+body {
+    background: rgb(62,62,62);
+    background: linear-gradient(90deg, rgba(62,62,62,1) 0%, rgba(80,80,89,1) 50%, rgba(112,171,182,1) 100%);
+}
+
+/* Style Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+
+    margin-bottom: 24px;
+
+    border-bottom: 2px solid #eee;
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-top-left-radius: 50%;  /* 100px of height + 10px of border */
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 10px solid #eee;
+    border-bottom: 0;
+}
+
+header a {
+    color: #eee;
+    text-decoration: none;
+}
+
+/* Style Nav */
+nav {
+    display: flex;
+    margin: 20px 0;
+}
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav ul li {
+    transition:  transform 300ms;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+main {
+    display: flex;
+    margin: 0 25px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#articles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+#articles .list, #projects .list {
+    display: flex;
+    gap: 25px;
+}
+
+article {
+    color: #111;
+    padding: 1.5rem 1rem;
+    width: 400px;
+    flex: 7;
+    border-radius: 7px;
+    background-color: #d1c7c7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+article a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #111;
+}
+
+article a svg {
+    height: 2rem;
+}
+
+article .img {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+article .img img {
+    width: 100%;
+    height: max-content;
+    background-color: beige;
+    border-radius: 7px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+    min-height: 500px;
+    padding: 1rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portfolio {
+    display: flex;
+    gap: 50px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 80%;
+}
+
+#contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 1rem;
+    padding: 1rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contact form input, #contact form textarea {
+    padding: 10px 20px;
+    border-radius: 7px;
+    outline: none;
+}
+
+#contact form input[type=submit] {
+    align-self: center;
+    width: fit-content;
+    cursor: pointer;
+}
+
+#projects .list {
+    display: flex;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 20px 10px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
